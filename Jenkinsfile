@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/YOUR_USERNAME/nginx-jenkins.git'
+                    url: 'https://github.com/prasannacn08/Nginx-application-1.git'
             }
         }
 
@@ -57,7 +57,7 @@ pipeline {
     post {
         success {
             echo "Nginx deployment successful!"
-            echo "Access application at http://<SERVER-IP>:8085"
+            echo "Access application at http://3.249.72.167:8085"
         }
 
         failure {
